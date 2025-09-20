@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 100, 102, 212)),
       ),
-      home: const MyHomePage(title: 'Aplicación de muestra de Flutter'),
+      home: const MyHomePage(title: 'Vamos a por Flutter'),
     );
   }
 }
@@ -108,6 +108,10 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            ElevatedButton(
+              onPressed: _incrementCounter,
+              child: const Text('Aumentar'),
             ),
           ],
         ),
